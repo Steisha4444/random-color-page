@@ -14,21 +14,21 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      home: const RandomColorText(),
+      home: const RandomColorPage(),
     );
   }
 }
 
-class RandomColorText extends StatefulWidget {
-  const RandomColorText({
+class RandomColorPage extends StatefulWidget {
+  const RandomColorPage({
     Key? key,
   }) : super(key: key);
 
   @override
-  State<RandomColorText> createState() => _RandomColorTextState();
+  State<RandomColorPage> createState() => _RandomColorPageState();
 }
 
-class _RandomColorTextState extends State<RandomColorText> {
+class _RandomColorPageState extends State<RandomColorPage> {
   Color gerRandomColor() {
     Random random = Random();
 
