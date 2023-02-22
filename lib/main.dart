@@ -52,7 +52,7 @@ class _RandomColorPageState extends State<RandomColorPage> {
         child: Stack(
           children: [
             AnimatedContainer(
-              duration: const Duration(seconds: 1),
+              duration: const Duration(milliseconds: 400),
               decoration: BoxDecoration(
                 color: color,
               ),
